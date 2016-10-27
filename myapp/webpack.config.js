@@ -1,6 +1,7 @@
-var config = {
-    context: __dirname + "/app",
-    entry: "./main.js",
+var path = require("path"),
+    config = {
+    context: path.join(__dirname, "app"),
+    entry: path.join(".", "main.js"),
 
     output: {
         filename: "bundle.js",
